@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-   <style>
-   
-   
-   			
-   			/* Sidebar CSS*/		
+	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Social String</title>
+		<link rel = "stylesheet" type = "text/css" href = "CSS/external.css">
+		<link rel = "icon" type = "image/x-icon" href = "favicon/favicon (1).ico">
+		<style>
+			body{
+				background-color: #E8E8E8;
+			}
+			.content{
+				padding-top:1%
+			}
+			.sidebar{
+				color: #fff;
+                width: 250px;
+                padding-left: 20px;
+                height: 100%;
+			}
 			.sidebar {
   				height: 100%;
   				width: 0;
@@ -16,14 +26,10 @@
   				z-index: 1;
   				top: 0;
   				left: 0;
-  				background-color: #111;
+  				background-color: #B7B7B7;
   				overflow-x: hidden;
   				transition: 0.5s;
   				padding-top: 60px;
-  				color: #fff;
-                width: 250px;
-                padding-left: 20px;
-                height: 100%;
 			}	
 
 			.sidebar a {
@@ -48,10 +54,11 @@
 			}
 	
 			.openbtn {
+				margin-left: 20px;
  				font-size: 25px;
  				font-family: "Monospace";
   				cursor: pointer;
- 				background-color: #111;
+ 				background-color: #B7B7B7;
  				color: white;
  				padding: 10px 15px;
  				border: none;
@@ -83,10 +90,6 @@
 		</div>
 		<div class = "content" id = "main">
 			<button class="openbtn" onclick = "openNav()"> Open Sidebar </button><br>
-			<article>
-				
-				
-			</article>
 		</div>
 		<div class = "sidebar">
 			
@@ -102,4 +105,5 @@
 		document.getElementById("main").style.marginLeft= "0";
 	}
 </script>
+	</body>
 </html>
