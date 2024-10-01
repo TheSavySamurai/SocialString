@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-	
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Social String</title>
@@ -10,8 +9,14 @@
 			body{
 				background-color: #E8E8E8;
 			}
+			/*header*/
+			.header{
+				
+			}
+			/* sidebar*/
 			.content{
-				padding-top:1%
+				padding-top:1%;
+				font-family:"lucida console";
 			}
 			.sidebar{
 				color: #fff;
@@ -55,12 +60,13 @@
 	
 			.openbtn {
 				margin-left: 20px;
- 				font-size: 25px;
- 				font-family: "Monospace";
+				margin-top: 10px;
+ 				font-size: 100%;
+ 				font-family: "lucida console";
   				cursor: pointer;
  				background-color: #B7B7B7;
  				color: white;
- 				padding: 10px 15px;
+ 				padding: 20px 25px;
  				border: none;
 			}
 
@@ -88,8 +94,13 @@
   			<a href="#">Reviews</a>
   			<a href="#">Socials</a>
 		</div>
-		<div class = "content" id = "main">
+		<div class="content"id="main">
+			<header style = "background-color:#A19F9F">
+				<img id="logo"src="Images/Social String Logo.PNG" alt="logo"title="social string"style="width:10%;height:10%">
+				<label for="logo"Style="color:#FEFDFD;font-size:800%">Social String</label>
+			</header>
 			<button class="openbtn" onclick = "openNav()"> Open Sidebar </button><br>
+			<p> </p>
 		</div>
 		<div class = "sidebar">
 			
