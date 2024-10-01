@@ -98,11 +98,37 @@
 			<header style = "background-color:#A19F9F">
 				<img id="logo"src="SocialStringLogo.PNG" alt="logo"title="socialString"style="width:10%;height:10%">
 				<label for="logo"Style="color:#FEFDFD;font-size:800%">Social String</label>
-				<a href = "signupPage.html"style = "background-color: #E8E8E8; border: 2px solid #0D0C0C; padding: 10px 20px">Sign Up</a>
-				<a href = "loginPage.html"style = "background-color: #E8E8E8; border: 2px solid #0D0C0C; padding: 10px 20px; margin-left: 10px">Log in</a>
 			</header>
 			<button class="openbtn" onclick = "openNav()"> Open Sidebar </button><br>
-			<p> </p>
+			<form name="users" netlify>
+  			<div class="container">
+   	 			<h1 style = "text-decoration: underline">Sign Up</h1>
+    			<p>Please fill in this form to create an account.</p>
+    			<hr>
+
+    			<label for="email"><b>Email</b></label>
+    			<input type="text" placeholder="Enter Email" name="email" required>
+				<br>
+				<br>
+    			<label for="psw"><b>Password</b></label>
+    			<input type="password" placeholder="Enter Password" name="psw" required>
+    			<br>
+    			<br>
+    			<label for="psw-repeat"><b>Repeat Password</b></label>
+    			<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+				<br>
+    			<label>
+      			<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    			</label>
+
+    		
+
+    			<div class="clearfix">
+      				<button type="button" class="cancelbtn">Cancel</button>
+      				<button type="submit" class="signupbtn">Sign Up</button>
+    			</div>
+  				</div>
+			</form>
 		</div>
 		<div class = "sidebar">
 			
