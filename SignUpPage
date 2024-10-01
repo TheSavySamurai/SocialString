@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Social String</title>
+		<link rel = "stylesheet" type = "text/css" href = "CSS/external.css">
+		<link rel = "icon" type = "image/x-icon" href = "favicon/favicon (1).ico">
+		<style>
+			body{
+				background-color: #E8E8E8;
+			}
+			/*header*/
+			.header{
+				
+			}
+			/* sidebar*/
+			.content{
+				padding-top:1%;
+				font-family:"lucida console";
+			}
+			.sidebar{
+				color: #fff;
+                width: 250px;
+                padding-left: 20px;
+                height: 100%;
+			}
+			.sidebar {
+  				height: 100%;
+  				width: 0;
+  				position: fixed;
+  				z-index: 1;
+  				top: 0;
+  				left: 0;
+  				background-color: #B7B7B7;
+  				overflow-x: hidden;
+  				transition: 0.5s;
+  				padding-top: 60px;
+			}	
+
+			.sidebar a {
+ 			 	padding: 8px 8px 8px 32px;
+  				text-decoration: none;
+  				font-size: 25px;
+  				color: #818181;
+  				display: block;
+  				transition: 0.3s;
+}
+
+			.sidebar a:hover {
+ 				color: #f1f1f1;
+			}
+
+			.sidebar .closebtn {
+ 				position: absolute;
+  				top: 0;
+  				right: 25px;
+  				font-size: 36px;
+  				margin-left: 50px;
+			}
+	
+			.openbtn {
+				margin-left: 20px;
+				margin-top: 10px;
+ 				font-size: 100%;
+ 				font-family: "lucida console";
+  				cursor: pointer;
+ 				background-color: #B7B7B7;
+ 				color: white;
+ 				padding: 20px 25px;
+ 				border: none;
+			}
+
+			.openbtn:hover {
+				background-color: #444;
+			}
+
+			#main {
+  				transition: margin-left .5s;
+  				padding: 16px;
+			}
+
+			/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+			@media screen and (max-height: 450px) {
+  				.sidebar {padding-top: 15px;}
+  				.sidebar a {font-size: 18px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mySidebar" class="sidebar" style = "font-family:Monospace">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+  			<a href="#">Home</a>
+  			<a href="#">Services</a>
+  			<a href="#">Reviews</a>
+  			<a href="#">Socials</a>
+		</div>
+		<div class="content"id="main">
+			<header style = "background-color:#A19F9F">
+				<img id="logo"src="Images/SocialStringLogo.PNG" alt="logo"title="socialString"style="width:10%;height:10%">
+				<label for="logo"Style="color:#FEFDFD;font-size:800%">Social String</label>
+			</header>
+			<button class="openbtn" onclick = "openNav()"> Open Sidebar </button><br>
+			<form name="users" netlify>
+  			<div class="container">
+   	 			<h1>Sign Up</h1>
+    			<p>Please fill in this form to create an account.</p>
+    			<hr>
+
+    			<label for="email"><b>Email</b></label>
+    			<input type="text" placeholder="Enter Email" name="email" required>
+				<br>
+				<br>
+    			<label for="psw"><b>Password</b></label>
+    			<input type="password" placeholder="Enter Password" name="psw" required>
+    			<br>
+    			<br>
+    			<label for="psw-repeat"><b>Repeat Password</b></label>
+    			<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+				<br>
+    			<label>
+      			<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    			</label>
+
+    		
+
+    			<div class="clearfix">
+      				<button type="button" class="cancelbtn">Cancel</button>
+      				<button type="submit" class="signupbtn">Sign Up</button>
+    			</div>
+  				</div>
+			</form>
+		</div>
+		<div class = "sidebar">
+			
+		</div>
+		<script>
+	function openNav() {
+  		document.getElementById("mySidebar").style.width = "250px";
+  		document.getElementById("main").style.marginLeft = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidebar").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+	}
+</script>
+	</body>
+</html>
